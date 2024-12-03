@@ -43,7 +43,8 @@ fn is_report_ok(report: &[u8; N], count: usize) -> bool {
 
 #[aoc(day2, part1)]
 pub fn part1(input: &str) -> i32 {
-  let s = input.as_bytes();
+  let tmp = input.to_owned() + "\n";
+  let s = tmp.as_bytes();
 
   let mut result = 0;
   let mut report = [0; N];
@@ -81,7 +82,8 @@ pub fn part1(input: &str) -> i32 {
 
 #[aoc(day2, part2)]
 pub fn part2(input: &str) -> i32 {
-  let s = input.as_bytes();
+  let tmp = input.to_owned() + "\n";
+  let s = tmp.as_bytes();
 
   let mut result = 0;
   let mut report = [0; N];
