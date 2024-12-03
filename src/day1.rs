@@ -55,6 +55,3 @@ pub fn part2(input: &str) -> i32 {
 
   return result;
 }
-
-mod tests {
-}
